@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#FF18C1AE</color>
+    
+    <color name="bg_title">#FF494C53</color>
+    <color name="txt_title_nor">#FFFFFFFF</color>
+    <color name="txt_title_pre">#44FFFFFF</color>
+    
+    <color name="txt_nav_nor">#FF000000</color>
+    <color name="txt_nav_pre">#FF18C1AE</color>
+    
+    <color name="bg_nav">#FFFFFFFF</color>
+    <color name="bg_page">#FFEEEEEE</color>
+    <color name="scrollbarbg">#4418C1AE</color>
+    
+    <color name="white">#FFFFFFFF</color>
+    
+</resources>

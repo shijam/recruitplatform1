@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bt_publish_vedio"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/theme_color"
+        android:text="发布" 
+        android:textSize="17sp"
+        android:visibility="gone"/>
+
+    <flytv.qaonline.view.PullToRefreshView
+        android:id="@+id/myqa_pull_refresh_view"
+        android:layout_below="@id/bt_publish_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/fragment_myqa_listview"
+            style="@style/Style_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:paddingBottom="@dimen/content_top_bottom"
+            android:paddingTop="@dimen/content_top_bottom" />
+    </flytv.qaonline.view.PullToRefreshView>
+
+    <flytv.qaonline.view.RefreshView
+        android:id="@+id/myqa_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

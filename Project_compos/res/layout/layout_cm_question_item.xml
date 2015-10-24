@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_question_compos_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_qu_type_num"
+                style="@style/style_compos_text_compos_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tx_qu_type_name"
+                style="@style/style_compos_text_compos_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_qu_name"
+                style="@style/style_compos_text_compos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/main_text_compos_question_lint" />
+        </LinearLayout>
+
+        <flytv.ext.view.MyGridView
+            android:id="@+id/gv_image_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="3dp"
+            android:listSelector="@drawable/friendactivity_comment_detail_list2"
+            android:numColumns="3"
+            android:padding="10dp"
+            android:verticalSpacing="3dp" >
+        </flytv.ext.view.MyGridView>
+
+        <LinearLayout
+            android:id="@+id/layout_handler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_compos_edit"
+                style="@style/style_compos_text_handler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/main_text_compos_edit" />
+
+            <TextView
+                android:id="@+id/tx_compos_dele"
+                style="@style/style_compos_text_handler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/main_text_compos_dele" />
+        </LinearLayout>
+        <include android:id="@+id/layout_mark_answer" android:visibility="gone" layout="@layout/layout_item_studen_mark_show" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

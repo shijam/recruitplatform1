@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_compos_text_compos"
+                    android:layout_width="@dimen/activity_vertical_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_text_compos_lint_add_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_user_bg"
+                    android:gravity="left|top"
+                    android:lines="4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_compos_text_compos"
+                    android:layout_width="@dimen/activity_vertical_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_text_compos_lint_add_content"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_user_bg"
+                    android:gravity="left|top"
+                    android:lines="4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_answer_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp" >
+
+                <flytv.ext.view.MyGridView
+                    android:id="@+id/gridView_answer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="6dp" >
+                </flytv.ext.view.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

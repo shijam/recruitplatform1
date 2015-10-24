@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="edu.njupt.zhb.activity.AyLogin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image_bg_fill"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/top_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_user_bg"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/edit_black_color"
+            android:textSize="16sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/edit_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_user_bg"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="生日"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/edit_black_color"
+            android:textSize="16sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/edit_school"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_user_bg"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="学校"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:tag="01090205"
+            android:textColor="@color/edit_black_color"
+            android:textSize="16sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_login_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/White"
+            android:textSize="18sp" >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_logo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

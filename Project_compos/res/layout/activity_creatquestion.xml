@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qa_new_main_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_page" >
+
+    <flytv.qaonline.view.TitleView
+        android:id="@+id/qa_new_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/create_bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/bt_myteacher"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_myteacher"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/bt_find_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/findteacher"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/bt_auto_assign"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/auto_assign"
+                android:padding="10dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/create_bottom_view"
+        android:layout_below="@id/qa_new_title_view"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="   学科:"
+                    android:textColor="#383838" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_branch" >
+
+                    <EditText
+                        android:id="@+id/et_branch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edt"
+                        android:enabled="false"
+                        android:hint="请填学科 "
+                        android:textSize="@dimen/size_edit" />
+
+                    <Button
+                        android:id="@+id/subject_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/im_bm_array"
+                        android:padding="3dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+           <!--  <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="   标题:"
+                    android:textColor="#383838" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_title"
+                    android:background="@drawable/bg_edt"
+                    android:hint="请填标题"
+                    android:textSize="@dimen/size_edit" />
+            </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_diffcult_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="疑难点"
+                    android:textColor="#383838" />
+
+                <EditText
+                    android:id="@+id/et_diffcult_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_diffcult_point"
+                    android:background="@drawable/bg_edt"
+                    android:hint="请填疑难点"
+                    android:textSize="@dimen/size_edit" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                   android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   内容:"
+                    android:textColor="#383838" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_content"
+                    android:background="@drawable/bg_edt"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:lines="6"
+                    android:textSize="@dimen/size_edit" />
+            </LinearLayout>
+
+            <flytv.qaonline.view.LocatFileView
+                android:id="@+id/test_locatfile_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/et_content"
+                android:layout_below="@id/et_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/iv_add_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/et_content"
+                android:layout_below="@+id/test_locatfile_view"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/im_add_image"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

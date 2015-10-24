@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/activity_vertical_title_width"
+    android:gravity="center_vertical"
+    android:padding="0.0px" >
+
+    <ImageView
+        android:id="@+id/rlCommenTitleBG"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/title_slidemenu_bg" />
+
+    <TextView
+        android:id="@+id/ivTitleName"
+        style="@style/A1_Font"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="90.0dip"
+        android:paddingRight="90.0dip"
+        android:singleLine="true"
+        android:text="@string/title_name" />
+
+    <ImageButton
+        android:id="@+id/ivTitleBtnLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:src="@drawable/img_back"
+        android:includeFontPadding="false" />
+
+    <Button
+        android:id="@+id/button_grade"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/ivTitleName"
+        android:layout_alignBottom="@+id/ivTitleName"
+        android:layout_alignRight="@+id/ivTitleName"
+        android:layout_marginRight="58dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/grade" />
+
+    <Button
+        android:id="@+id/ivTitleBtnRight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/White"
+        android:background="@drawable/img_btn_edit"
+        android:gravity="center"
+        android:visibility="visible"
+        android:includeFontPadding="false" />
+
+    <TextView
+        android:id="@+id/tx_right"
+        style="@style/style_compos_text_rigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ivTitleName"
+        android:layout_alignBottom="@+id/ivTitleName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/main_text_compos_submit_lint"
+        android:visibility="invisible" />
+
+</RelativeLayout>

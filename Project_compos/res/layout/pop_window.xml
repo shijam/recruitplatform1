@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <!--
+         <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Button" />-->
+
+    <EditText
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#EAEAEA"
+        android:gravity="top"
+        android:singleLine="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/yin"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/popEditLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="#EC5D07"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="#EC5D07"
+            android:text="@string/submit"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="1024dp"
+    android:layout_height="700dp" >
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="1024dp"
+        android:layout_height="700dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <com.example.richtest.PhotoView
+            android:id="@+id/iv_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.example.richtest.DrawingWithBezier
+            android:id="@+id/ic_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!--
+             <TextView
+            android:id="@+id/tv_current_matrix"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#60000000"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+        -->
+
+        <FrameLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#3a3c42"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/revoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/revoke_button" />
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/revoke"
+            android:background="@drawable/read_button" />
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/read"
+            android:background="@drawable/write_button" />
+
+        <Button
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/write"
+            android:background="@drawable/rotate_button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/write"
+            android:background="@drawable/save_button" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/save"
+            android:background="@drawable/cancel_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

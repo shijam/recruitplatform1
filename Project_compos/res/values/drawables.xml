@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="transparent" type="drawable">#00000000</item>
+    <item name="compos_radio_nor" type="drawable">#f7f7f7</item>
+    <item name="compos_radio_sel" type="drawable">#dcdcdc</item>
+    
+    
+    <item name="tool_box_left_bg_normal" type="drawable">#e1d9c7</item>
+    <item name="tool_box_left_bg_select" type="drawable">#cbc3b3</item>
+    
+    <item name="tool_box_bg_draw" type="drawable">#f26d5f</item>
+    
+
+</resources>

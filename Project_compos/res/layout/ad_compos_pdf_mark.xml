@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_all_slidemenu_bg"
+    tools:context="flytv.compos.run.MainActivity" >
+
+    <include
+        android:id="@+id/title_top"
+        layout="@layout/main_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_top"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/style_compos_text_compos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compos_mark_comment_answer" >
+            </TextView>
+
+            <GridView
+                android:id="@+id/grid_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mark_compos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/style_compos_text_compos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compos_mark_comment_mark_context" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edit_mark_context"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/White"
+                android:lines="4" >
+            </EditText>
+        </LinearLayout>
+		 <LinearLayout
+            android:id="@+id/layout_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_marl_save"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@color/theme_color"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/compos_mark_comment_save"
+                android:textColor="@color/White"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_mark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/grid_all_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

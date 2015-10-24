@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="gray">#808080</color>
+    <color name="lightgreen">#99CC33</color>
+    <color name="green">#00CC00</color>
+    <color name="title_all_user_bg">#d9cbab</color>
+    <color name="title_all_slidemenu_bg">#dcdcdc</color>
+    <color name="text_white_shadow_color">#ff5a9487</color>
+    <color name="text_black_shadow_color">#424242</color>
+    <color name="text_black_title_color">#55534f</color>
+    <color name="btn_bottom_nor">#ece9dd</color>
+    <color name="btn_bottom_selector">#c3bfb3</color>
+    <color name="base_reader_color_default">#5f5e57</color>
+    <color name="base_reader_color_pressed">#8e8a81</color>
+    <color name="text_black_top_color">#ec934a</color>
+    <color name="text_black_bottom_color">#7d7d7d</color>
+    <color name="edit_black_color">#cacaca</color>
+    <color name="rounded_container_border">#ffb7babb</color>
+    <color name="rounded_container_border_focus">#5cb868</color>
+    <color name="rounded_container_border_nor">#ef8236</color>
+    <color name="rounded_container_border_pre">#468d4f</color>
+    <color name="rounded_out_border_focus">#a80a16</color>
+
+    <drawable name="rounded_out_border_list_selector">#e1d9c7</drawable>
+
+    <color name="rounded_out_border_list_nor">#f05e1b</color>
+    <color name="base_start_color_default">#ffffffff</color>
+    <color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_default">#ffffffff</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+    <color name="btn_yellow_border_focus">#c4c4c4</color>
+    <color name="btn_yellow_border_preed">#239791</color>
+    <color name="btn_color_border_preed">#20998f</color>
+    <color name="base_btn_add_color_pressed">#228e89</color>
+    <color name="base_btn_add_color_norssed">#2bbdb5</color>
+    <!-- test_page -->
+
+    <drawable name="base_start_nor">#ffffff</drawable>
+    <drawable name="base_start_pre">#fc8a00</drawable>
+
+    <color name="base_start_color">#eeeeee</color>
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="yellow">#F99503</color>
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="refresh_head_bg">#2B2B2B</color>
+    <color name="red">#FF0000</color>
+    <color name="backColor">#2000</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="defaultTextColor">#666</color>
+    <color name="devide_line">#CBCED2</color>
+    <color name="blue">#499BF7</color>
+    <color name="whites">#ffffff</color>
+    <color name="grays">#818181</color>
+    <color name="gray_font">#818181</color>
+    <color name="common_title">#F9F9F9</color>
+    <color name="text_lint">#eeeeeeee</color>
+
+    <drawable name="btn_text_nor">#eceff3</drawable>
+    <drawable name="btn_text_pre">#cfd3d5</drawable>
+
+    <color name="tool_box_bg_draw">#f26d5f</color>
+    <color name="mp3_view_color">#983f35</color>
+    <color name="flytv_comment_reply_color">#487da0</color>
+    <color name="flytv_comment_handler_color">#20c8a7</color>
+
+    <drawable name="base_start_bg">#eeeeee</drawable>
+	<drawable name="base_title_bg">#eddec0</drawable>
+	<color name="base_title_bg">#e1895c</color>
+    
+    
+</resources>

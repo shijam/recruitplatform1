@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- edudemo.flytv.com.cn/love_elearning -->
+    <!-- http://182.92.118.91:8088  edudemo.flytv.com.cn -->
+    <!-- http://182.92.118.91:8088 -->
+    <string name="app_image">http://edudemo.flytv.com.cn/</string>
+    <string name="app_host">http://182.92.118.91:8088/love_elearning/</string>
+    <string name="home_file_upload_url">uploadCustomFile2.do</string>
+    <!--  -->
+    <string name="flytv_user_login_login">epad/loveLogin</string>
+    <string name="flytv_user_login_info">epad/getUserInfo</string>
+    <string name="flytv_user_login_info_header">epad/updateHeader</string>
+    <string name="flytv_user_login_school_all">epad/getSchoolList</string>
+    <string name="flytv_user_file_uploadImage">uploadCustomFileForPC.do</string>
+    
+    <!-- 批阅 -->
+    <string name="compos_save_mark">homeworkPad/saveHomeworkMarkEditor2.do</string>
+	<string name="compos_save_mark_ext">homeworkPad/saveMarkEditorExt2.do</string>
+	<string name="compos_save_mark_show">homeworkPad/showHomeworkMarkEditor</string>
+	
+    <!-- 朋友圈 -->
+    <string name="compos_circle_all_list">circlePad/index</string>
+    <string name="compos_circle_user_list">circlePad/oneIndex</string>
+    <string name="compos_circle_saveLog">circlePad/saveLog</string>
+    <string name="compos_circle_updateLog">circlePad/updateLog</string>
+    <string name="compos_circle_showLog">circlePad/showLog</string>
+    <string name="compos_circle_deleteLog">circlePad/deleteLog</string>
+    <string name="compos_circle_saveComment">circlePad/saveComment</string>
+    <string name="compos_circle_praise">circlePad/praise</string>
+
+    <!-- 作业中心 -->
+
+    <string name="compos_tab_all_list">homeworkPad/index</string>
+    <string name="compos_tab_all_item_info">homeworkPad/showHomework</string>
+    <string name="compos_tab_all_item_dele">homeworkPad/delHomework</string>
+    <string name="compos_tab_item_dele_question">homeworkPad/delQuestion.do</string>
+
+    <!-- 获取提交作业列表 -->
+
+    <string name="compos_tab_all_answer_loadQuestion">homeworkPad/loadQuestion</string>
+    <string name="compos_tab_all_answer_listt">homeworkPad/getAnswerList</string>
+    <string name="compos_tab_answer_addwork">homeworkPad/submitHomework</string>
+    <string name="compos_tab_answer_addwork_question">homeworkPad/saveQuestion</string>
+    <string name="compos_tab_answer_addwork_question_dele">homeworkPad/delQuestion</string>
+    <string name="compos_tab_answer_student_compos">homeworkPad/saveAnswer.do</string>
+    <string name="compos_tab_answer_tear_mark">homeworkPad/mark.do</string>
+    <string name="compos_tab_answer_tear_finishMark">homeworkPad/finishMark</string>
+    <string name="compos_tab_answer_stu_finishMark"> homeworkPad/finishHomework</string>
+
+    <!-- 个人中心 -->
+    <string name="compos_user_school">onlinePad/getStatisticScoreBySchool</string>
+    <string name="compos_user_region">onlinePad/getStatisticScore</string>
+
+</resources>

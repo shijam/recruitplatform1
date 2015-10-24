@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:id="@+id/popunwindow_top_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/res_list_top" />
+
+    <ListView
+        android:id="@+id/popupwindow_login_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popunwindow_top_iv"
+        android:background="@drawable/res_list_center"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/res_horizontal_line" />
+
+    <ImageView
+        android:id="@+id/popunwindow_bottom_iv"
+        android:layout_below="@id/popupwindow_login_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_list_bottom" />
+
+</RelativeLayout>

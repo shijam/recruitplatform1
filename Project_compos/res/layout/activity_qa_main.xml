@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="flytv.qaonline.ui.QAMainActivity" 
+    android:background="@color/bg_page">
+
+    <flytv.qaonline.view.TitleView
+        android:id="@+id/qa_main_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <flytv.qaonline.view.NavigationBar
+        android:id="@+id/qa_main_navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_nav" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/qa_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

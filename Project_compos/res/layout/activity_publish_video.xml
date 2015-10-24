@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <flytv.qaonline.view.TitleView
+            android:id="@+id/qa_new_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="标题:   "
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_title"
+                android:background="@drawable/bg_edt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+             android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="学科:   "
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_branch" >
+
+                <EditText
+                    android:id="@+id/et_branch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/et_branch"
+                    android:background="@drawable/bg_edt" 
+                    android:enabled="false"/>
+
+                <Button
+                    android:id="@+id/subject_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/im_bm_array"
+                    android:padding="3dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+             android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="班级:   "
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_class" >
+
+                <EditText
+                    android:id="@+id/et_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/et_branch"
+                    android:background="@drawable/bg_edt"
+                    android:enabled="false" />
+
+                <Button
+                    android:id="@+id/class_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/im_bm_array"
+                    android:padding="3dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_add_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加视频:   " />
+
+            <ImageView
+                android:id="@+id/iv_add_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@id/tv_add_video"
+                android:layout_below="@id/tv_add_video"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/im_add_image" />
+
+            <RelativeLayout
+                android:id="@+id/rl_cubeimageview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@id/tv_add_video"
+                android:layout_below="@id/tv_add_video"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <in.srain.cube.image.CubeImageView
+                    android:id="@+id/im_backgourd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_user_image_nor" />
+
+                <ImageView
+                    android:id="@+id/im_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/im_play_nor" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

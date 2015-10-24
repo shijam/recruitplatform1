@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLyout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#239666"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:text="提交"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:id="@+id/layout_video_effects_title"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="left"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+            </LinearLayout><!-- android:background="#00ff00" -->
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/layout_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/layout_bottom"
+            android:layout_below="@id/layout_top"
+            android:background="#EAEAEA" >
+
+            <com.example.richtest.RichEditText
+                android:id="@+id/RichEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null" />
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

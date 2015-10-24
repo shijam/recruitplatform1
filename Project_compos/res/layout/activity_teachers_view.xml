@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <flytv.qaonline.view.TitleView
+        android:id="@+id/qa_new_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <flytv.qaonline.view.PullToRefreshView
+        android:layout_below="@+id/qa_new_title_view"
+        android:id="@+id/teachers_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/activity_teachers_listview"
+            style="@style/Style_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:paddingBottom="@dimen/content_top_bottom"
+            android:paddingTop="@dimen/content_top_bottom" />
+    </flytv.qaonline.view.PullToRefreshView>
+
+    <flytv.qaonline.view.RefreshView
+        android:id="@+id/teacher_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

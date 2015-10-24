@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题字体大小 -->
+    <dimen name="size_title_tv">22sp</dimen>
+    <dimen name="size_title_lr_tv">17sp</dimen>
+    <dimen name="padding_titletv">5dp</dimen>
+    <dimen name="padding_title_tb">8dp</dimen>
+    <dimen name="padding_title_lr">10dp</dimen>
+    <dimen name="marg_titlename_lr">100dp</dimen>
+    
+    <dimen name="content_top_bottom">4sp</dimen>
+    <dimen name="content_left_right">5sp</dimen>
+    <dimen name="list_divider_height">4sp</dimen>
+     <!-- 字体大小 -->
+    <dimen name="size_xxl_tv">18sp</dimen>
+    <dimen name="size_xl_tv">16sp</dimen>
+    <dimen name="size_l_tv">15sp</dimen>
+    <dimen name="size_m_tv">12sp</dimen>
+    <dimen name="size_edit">15sp</dimen>
+</resources>

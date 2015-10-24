@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    tools:context="flytv.qaonline.ui.QAMainActivity" >
+
+    <flytv.qaonline.view.TitleView
+        android:id="@+id/qa_detaile_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/qa_detaile_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_control"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/qadetail_s_finish_iv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/qa_finish" />
+
+        <ImageView
+            android:id="@+id/qadetail_s_next_iv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/qa_next" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/qa_detaile_bottom_view"
+        android:layout_below="@id/qa_detaile_title_view"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/qa_detaile_dif_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/qa_detaile_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_easy"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/bg_select_not" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="易"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_l_tv" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_nomal"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/bg_select_not" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="中"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_l_tv" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_diffcult"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/bg_select_not" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="难"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_l_tv" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp" >
+
+                <flytv.qaonline.view.QADetailView
+                    android:id="@+id/qadetail_content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_replycontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                         android:background="@drawable/item_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_title_reply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="解答内容" />
+
+                        <EditText
+                            android:id="@+id/et_replycontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:gravity="top"
+                            android:lines="6"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@null"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <flytv.qaonline.view.LocatFileView
+                        android:id="@+id/qadetail_locatfile_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/qadetail_teachcon_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/qadetail_t_takephoto_btn"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/takephoto" />
+
+                        <Button
+                            android:id="@+id/qadetail_t_record_btn"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/record" />
+
+                        <Button
+                            android:id="@+id/qadetail_t_video_btn"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/video" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/qadetail_student_reassubmit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/theme_color"
+                            android:text="提交"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <Button
+                        android:id="@+id/bt_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/theme_color"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="提交"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" 
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

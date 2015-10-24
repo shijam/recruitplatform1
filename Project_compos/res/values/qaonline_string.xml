@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_return">返回</string>
+    <string name="str_qa_title">答题解惑</string>
+    <string name="str_qa_newqa">新建问题</string>
+    <string name="str_qa_newqaa"></string>
+    <string name="str_qa_selectteacher">选择老师</string>
+    <string name="str_qa_detail">详情</string>
+    <string name="str_qa_test">考一考</string>
+    <string name="str_qa_nextq">追问</string>
+    <string name="str_tips_loading">正在加载...</string>
+    <string name="str_tips_nonet">连接网络失败，请检查网络设置</string>
+    <string name="str_tips_nodata">暂无数据,轻触刷新</string>
+    <string name="refresh_pull_label">下拉刷新　</string>
+    <string name="refresh_release_label">松开后刷新</string>
+    <string name="refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="refresh_footer_release_label">松开后加载　</string>
+    <string name="refresh_footer_pull_label">上拉加载更多</string>
+    <string name="refresh_footer_refreshing_label">努力加载中\u2026</string>
+    <string name="str_branch_empty">请输入学科</string>
+    <string name="str_branch_correct">请输入正确学科</string>
+    <string name="str_title_empty">请输入标题</string>
+    <string name="str_difficultpoint_empty">请输入疑难点</string>
+    <string name="str_content_empty">请输入内容</string>
+    <string name="str_newquestion_success">问题提交成功</string>
+    <string name="str_publish_title">发布</string>
+    
+    
+    <!--问题列表  -->
+    <string name="flytv_question_list">onlinePad/myIndex</string>
+    <string name="flytv_share_list">onlinePad/shareIndex</string>
+    <string name="flytv_submit_question">onlinePad/submitQuestion</string>
+    <string name="flytv_experiment_list">onlinePad/experimentIndex</string>
+    <string name="flytv_getteachers_list">onlinePad/getTeachersList</string>
+    <string name="flytv_find_teacher">onlinePad/markChooseTeacher</string>
+    <string name="flytv_auto_teacher">onlinePad/autoChooseTeacher</string>
+    <string name="flytv_submit_experiment">onlinePad/submitExperiment</string>
+    <string name="flytv_share_question">onlinePad/shareQuestion</string>
+    <string name="flytv_end_question">onlinePad/endQuestion</string>
+    <string name="flytv_submitTest_question">onlinePad/submitTestQuestion</string>
+    <string name="flytv_setscore_question">onlinePad/setScore</string>
+    <string name="flytv_test_answer">onlinePad/submitTestAnswer</string>
+    <string name="flytv_test_mark">onlinePad/submitTestMark</string>
+    <string name="flytv_mark">onlinePad/mark</string>
+    <string name="flytv_teacherinfo">onlinePad/teacherInfo</string>
+    
+    
+    <string name="flytv_question_detail">onlinePad/showQuestion</string>
+    <string name="flytv_file">http://182.92.118.91:8088/love_elearning_files/upload1</string>
+
+</resources>

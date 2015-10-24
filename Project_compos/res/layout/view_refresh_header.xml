@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:gravity="center" android:paddingBottom="10dip"
+    android:paddingTop="10dip" android:orientation="vertical">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:orientation="horizontal">
+	     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+	         android:layout_marginRight="20dip">
+			    <ProgressBar
+			        android:id="@+id/pull_to_refresh_progress"
+			        android:layout_width="24dp"
+			        android:layout_height="24dp"
+			        android:gravity="center"
+			        android:indeterminateDrawable="@drawable/res_pro_loading"
+			        android:indeterminateDuration="1200"
+			        android:indeterminate="false"
+			        android:visibility="gone"/>
+			    <ImageView
+			        android:id="@+id/pull_to_refresh_image"
+			        android:layout_width="24dp"
+			        android:layout_height="24dp"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:src="@drawable/xlistview_arrow"
+			        android:visibility="visible"/>
+	    </RelativeLayout>     
+	    <TextView
+	        android:id="@+id/pull_to_refresh_text"
+	        android:textSize="13sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:textColor="#FF000000"
+	        android:text="@string/refresh_pull_label"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />    
+    </LinearLayout>
+    <TextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="从未"
+        android:textColor="#FF000000"
+        android:layout_gravity="center"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="visible" />       
+</LinearLayout>
